@@ -22,7 +22,9 @@ class GMBDT:
         array_pred = model.predict(array_value)
         array_values = np.concatenate((array_value, array_pred.reshape(-1, 1)), axis=1)
         unique, counts = np.unique(array_pred, return_counts=True)
-        if len(unique) < 2: return array_value
+        if len(unique) < 2:
+            if len(self.list_cluster) < 1: pass
+            else: return array_value
         
         array_medians = np.array([]).reshape(-1, self.n_features)
         # for idx in unique:
