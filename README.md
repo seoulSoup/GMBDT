@@ -31,7 +31,7 @@ The model sepreates dataset to 2 clusters recursively. In 2 clusters, larger siz
 The earlier data classified into smaller one has more possibility to predict as anomaly.
   
 The anomaly score is decided by Log Likelyhood Ratio Test p-value and probability to be in a larger cluster.
-The Model predicts anomaly by calucation of anomaly score matrix and weight array.
+The Model predicts anomaly by calculation of anomaly score matrix and weight array.
 The anomaly score matrix is concatenated matrix of anomaly scores from each depth of tree.
 The weight array makes more weight to seperated data from shallow depth of tree.
   
