@@ -1,0 +1,10 @@
+# pip install -r requirements.txt
+
+# GMBDT
+numpy>=1.20.1
+scipy>=1.6.1
+
+# practice ipynb
+pandas>=1.2.3
+matplotlib>=3.3.4
+seaborn>=0.11.1
