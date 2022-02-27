@@ -21,8 +21,8 @@ GMBDT is inspired by [Isolation Forest](https://ieeexplore.ieee.org/document/478
 GMBDT is just tree model now, but I'm working to make this tree to the forest.
 
 ## Core Concepts
-
-"Anomalous data is easier to isolate than normal data" from [Isolation Forest](https://ieeexplore.ieee.org/document/4781136).
+   
+The concept 'Anomalous data is easier to isolate than normal data' is from [Isolation Forest](https://ieeexplore.ieee.org/document/4781136).
    
 The condition of making decision in Binary Decision Tree substitute with Bayesian Gaussian Mixture Model.
    
