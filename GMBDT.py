@@ -92,13 +92,11 @@ class GMBDT:
         array_values = np.concatenate((array_value, array_pred.reshape(-1, 1)), axis=1)
         unique, counts = np.unique(array_pred, return_counts=True)
         if len(unique) < 2:
-            if len(self.list_cluster) < 1: pass
-            else: return array_value
-        
-        array_medians = np.array([]).reshape(-1, self.n_features)
+            if len(self.list_cluster) >= 1: return array_value
         
         if self.LLT_type == "median" or self.LLT_type == "med":
             # using median for Log Likelihood Ratio Test in predict()
+             array_medians = np.array([]).reshape(-1, self.n_features)
             for idx in unique:
                 array_median = np.median(array_values[array_values[:, -1] == idx, :-1], axis=0).reshape(1, -1)
                 array_medians = np.concatenate((array_medians, array_median), axis=0)
