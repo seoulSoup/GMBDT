@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 Gaussian Mixture Binary Decision Tree (GMBDT) is anomaly detection model for numerical datasets.
 
-GMBDT is very inspired by [Isolation Forest](https://ieeexplore.ieee.org/document/4781136) (But It's not an ensemble forest model). 
+GMBDT is inspired by [Isolation Forest](https://ieeexplore.ieee.org/document/4781136) (But It's not an ensemble forest model). 
 
 GMBDT is just tree model now, but I'm working to make this tree to the forest.
 
