@@ -22,13 +22,15 @@ GMBDT is just tree model now, but I'm working to make this tree to the forest.
 
 ## Core Concepts
 
-Anomalous data is easier to isolate than normal data by Isolation Forest.
-
-The number of components in Gaussian Mixture Model is fixed to 2.
-The model sepreates dataset to two clusters recursively. The larger size cluster which is bigger than the other one is target of recursive seperating.
+"Anomalous data is easier to isolate than normal data" from [Isolation Forest](https://ieeexplore.ieee.org/document/4781136).
+   
+The condition of making decision in Binary Decision Tree substitute with Bayesian Gaussian Mixture Model.
+   
+The number of components in Bayesian Gaussian Mixture Model is fixed to 2.
+GMBDT seperates dataset to two clusters recursively. The larger size cluster which is bigger than the other one is target of recursive seperating.
 (Assuming the larger size cluster has more possibility to be a normal dataset)
-  
-The earlier data classified into smaller one has more possibility to predict as anomaly.
+
+The data that is predicted as anomaly at the lower level of the tree has strong possibility to be an actual anomaly.
   
 The anomaly score is decided by Log Likelyhood Ratio Test p-value and probability to be in a larger size cluster.
 GMBDT predicts anomaly from calculation of anomaly score matrix and weight array.
