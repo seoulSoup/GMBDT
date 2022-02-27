@@ -182,14 +182,14 @@ class GMBDT:
 
     def predict(self, array_value: np.array, weight_type: str="linear", criteria: float=0.5):
         """
-        Predict by trained GaussianMixtureBinaryDecisionTree in fit() method.
+        Predict from trained GaussianMixtureBinaryDecisionTree in fit() method.
 
         Parameters
         ----------
         array_value : np.array
             Test set for BayesianGaussianMixture Model.
         weight_type : str
-            Matrix for calulate anomaly score.
+            Matrix for calculation of an anomaly score.
             More weight to earlier detected anomalys.
             "linear" weight or "exp" weight.
         criteria : float
@@ -255,7 +255,7 @@ class GMBDT:
         array_value : np.array
             Test set for BayesianGaussianMixture Model.
         weight_type : str
-            Matrix for calulate anomaly score.
+            Matrix for calculation of an anomaly score.
             More weight to earlier detected anomalys.
             "linear" weight or "exp" weight.
         criteria : float
