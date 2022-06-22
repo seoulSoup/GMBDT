@@ -96,7 +96,7 @@ class GMBDT:
         
         if self.LLT_type == "median" or self.LLT_type == "med":
             # using median for Log Likelihood Ratio Test in predict()
-             array_medians = np.array([]).reshape(-1, self.n_features)
+            array_medians = np.array([]).reshape(-1, self.n_features)
             for idx in unique:
                 array_median = np.median(array_values[array_values[:, -1] == idx, :-1], axis=0).reshape(1, -1)
                 array_medians = np.concatenate((array_medians, array_median), axis=0)
